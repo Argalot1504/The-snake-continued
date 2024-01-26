@@ -3,6 +3,8 @@
 
 #include "Food.h"
 #include "Engine/Classes/Components/StaticMeshComponent.h"
+#include "GameFramework/Actor.h"
+#include "Interactable.h"
 #include "SnakeBase.h"
 
 // Sets default values

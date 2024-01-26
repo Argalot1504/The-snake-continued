@@ -30,10 +30,10 @@ public:
 		TSubclassOf<ASnakeBase> SnakeActorClass;
 
 	UPROPERTY(EditAnyWhere)
-		float MinY = -1350.f; float MaxY = 1340.f;
+		float MinY = -450.f; float MaxY = 450.f;
 
 	UPROPERTY(EditAnyWhere)
-		float MinX = -1330.f; float MaxX = 1320.f;
+		float MinX = -450.f; float MaxX = 450.f;
 
 	UPROPERTY()
 		float SpawnZ = 2.f;

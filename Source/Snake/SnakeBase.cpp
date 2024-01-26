@@ -57,7 +57,7 @@ void ASnakeBase::AddSnakeElement(int ElementsNum)
 		{
 			NewSnakeElement->SetFirstElementType();
 		}
-		NewSnakeElement->SetLastElementSnake(SnakeElements, ChangesMesh);
+		
 	}
 }
 
