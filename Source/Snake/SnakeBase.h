@@ -48,6 +48,9 @@ public:
 
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "LastElement")
 		UStaticMesh* ChangesMesh;
+
+	UPROPERTY()
+		bool bIsMoved;
 	
 
 protected:

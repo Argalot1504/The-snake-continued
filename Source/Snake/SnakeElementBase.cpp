@@ -4,7 +4,7 @@
 #include "SnakeElementBase.h"
 #include "Engine/Classes/Components/StaticMeshComponent.h"
 #include "SnakeBase.h"
-#include "SnakeBase.h"
+
 
 // Sets default values
 ASnakeElementBase::ASnakeElementBase()
@@ -12,9 +12,11 @@ ASnakeElementBase::ASnakeElementBase()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
-	RootComponent = MeshComponent;
 	MeshComponent->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	MeshComponent->SetCollisionResponseToAllChannels(ECR_Overlap);
+
+	
+
 }
 
 // Called when the game starts or when spawned

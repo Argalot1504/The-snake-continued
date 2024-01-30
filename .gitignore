@@ -12,3 +12,27 @@ Saved
 *.suo
 *.xcodeproj
 *.xcworkspace
+
+void ASnakeBase::AddSnakeElement(int ElementsNum)
+{
+	for (int i = 0; i < ElementsNum; ++i)
+    {
+		int InX = SnakeElements.Num() * ElementSize;
+			if (ElementsNum == 1)
+			{
+				InX = SnakeElements[SnakeElements.Num() - 1]->GetActorLocation().X * ElementSize;
+			}
+		FVector NewLocation((InX, 0, 0));
+		FTransform NewTransform(NewLocation);
+		ASnakeElementBase* NewSnakeElement = GetWorld()->SpawnActor<ASnakeElementBase>(SnakeElementClass, NewTransform);
+		NewSnakeElement->SnakeOwner = this;
+		int32 ElementIndex = SnakeElements.Add(NewSnakeElement);
+		if (ElementIndex == 0)
+		
+		
+		{
+			NewSnakeElement->SetFirstElementType();
+		}
+		
+	}
+}
